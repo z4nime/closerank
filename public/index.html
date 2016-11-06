@@ -5,6 +5,7 @@
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.css">
     <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.js"></script> -->
     <script src="jquery.countdown.min.js"></script>
+    <meta name="stats-in-th" content="98f2" />
     <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
     <style>
@@ -15,8 +16,8 @@
         margin: 0;
         padding: 0;
         width: 100%;
-        background: #607D8B;
-        color: #CFD8DC;
+        background: #ececec;
+        color: #828282;
         display: table;
         font-weight: 100;
         font-family: 'Lato';
@@ -53,10 +54,14 @@
         <div class="content">
             <div class="title"></div>
             <div class="sub-title">-- Close Rank --</div>
-            <div class="fb-comments" data-href="https://closerank.herokuapp.com/" data-numposts="99"></div>
+
         </div>
     </div>
-    <div id="fb-root"></div>
+
+    <div style="position: absolute;top: 50%;width: 100%;text-align: center;">
+      <div class="fb-comments" data-href="https://closerank.herokuapp.com/" data-numposts="99"></div>
+      <div id="fb-root"></div>
+    </div>
     <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
