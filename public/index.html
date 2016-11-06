@@ -53,9 +53,17 @@
         <div class="content">
             <div class="title"></div>
             <div class="sub-title">-- Close Rank --</div>
+            <div class="fb-comments" data-href="https://closerank.herokuapp.com/" data-numposts="99"></div>
         </div>
     </div>
-
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v2.8&appId=1383586968333503";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
     <script type="text/javascript">
       $('.title').countdown('2016/11/07 23:59:59', function(event) {
         var totalHours = event.offset.totalDays * 24 + event.offset.hours;
